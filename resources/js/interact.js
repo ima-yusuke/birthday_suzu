@@ -28,9 +28,7 @@ interact('.dropzone').dropzone({
     // ドラッグ中の要素がドロップゾーンに入ったとき
     // ドラッグ可能な要素がドロップゾーンに到達したことを視覚的に示す
     ondragenter: function (event) {
-        var draggableElement = event.relatedTarget;
         var dropzoneElement = event.target;
-
         dropzoneElement.classList.add('drop-target');
     },
     // ドラッグ中の要素がドロップゾーンから離れたとき
