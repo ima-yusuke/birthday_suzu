@@ -1,7 +1,3 @@
-#inner-dropzone {
-    height: 400px;
-}
-
 .dropzone {
     background-color: #bfe4ff;
     border: dashed 4px transparent;
@@ -9,6 +5,8 @@
     margin: 10px auto 30px;
     padding: 10px;
     width: 80%;
+    height: 400px;
+
     transition: background-color 0.3s;
 }
 
