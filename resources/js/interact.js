@@ -126,4 +126,6 @@ function CheckAmount(){
         }
     }
     alert('クリアおめでとう！！！');
+    let container = document.getElementById('container');
+    container.classList.remove("hidden");
 }

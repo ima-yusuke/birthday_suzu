@@ -13,4 +13,7 @@
         <div id="fruit-dropzone" class="fruit_dropzone dropzone">フルーツエリア</div>
     </div>
 
+    <section id="container" class="hidden">
+        <h1>クリア後に見れるよ！</h1>
+    </section>
 </x-template>
