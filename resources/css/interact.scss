@@ -1,12 +1,12 @@
 .dropzone {
     background-color: #6ccfa8;
     border: dashed 4px transparent;
-    border-radius: 4px;
+
     margin: 10px auto 30px;
     padding: 10px;
-    width: 80%;
-    height: 400px;
-
+    border-radius: 90% 50% 70% 20% / 50% 40% 50% 90%;
+    width: 55%;
+    height: 40dvh;
     transition: background-color 0.3s;
 }
 
@@ -27,4 +27,21 @@
     transition: background-color 0.3s;
 }
 
+#radish{
+    transform: rotate(-10deg);
+}
 
+#strawberry{
+    transform: rotate(15deg);
+}
+#onion{
+    transform: rotate(45deg);
+}
+
+#mushroom{
+    transform: rotate(-35deg);
+}
+
+#peach{
+    transform: rotate(-15deg);
+}

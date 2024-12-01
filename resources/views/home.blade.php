@@ -11,16 +11,17 @@
 
     {{--missionページ--}}
     <section id="mission_container" class="hidden min-h-screen max-h-screen w-full relative">
-        <img src="{{ asset('storage/img/pic-01.png') }}" alt="radish" class="vegetable absolute right-[3%] bottom-[2%] yes-drop drag-drop object-cover w-[30dvw] h-[30dvw]">
-        <img src="{{ asset('storage/img/pic-02.png') }}" alt="strawberry" class="fruit absolute left-[20%] top-[5%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
-        <img src="{{ asset('storage/img/pic-03.png') }}" alt="onion" class="vegetable absolute left-[5%] bottom-[8%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
-        <img src="{{ asset('storage/img/pic-04.png') }}" alt="mushroom" class="vegetable absolute left-[60%] top-[3%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
-        <img src="{{ asset('storage/img/pic-05.png') }}" alt="peach" class="fruit absolute left-[5%] top-[30%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
+        <img src="{{ asset('storage/img/pic-01.png') }}" alt="radish" id="radish" class="vegetable absolute right-[3%] bottom-[2%] yes-drop drag-drop object-cover w-[30dvw] h-[30dvw]">
+        <img src="{{ asset('storage/img/pic-02.png') }}" alt="strawberry" id="strawberry" class="fruit absolute left-[5%] top-[5%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
+        <img src="{{ asset('storage/img/pic-03.png') }}" alt="onion" id="onion" class="vegetable absolute left-[5%] bottom-[8%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
+        <img src="{{ asset('storage/img/pic-04.png') }}" alt="mushroom" id="mushroom" class="vegetable absolute right-[2%] top-[3%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
+        <img src="{{ asset('storage/img/pic-05.png') }}" alt="peach" id="peach" class="fruit absolute left-[5%] top-[30%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
 
 
-        <div class="flex gap-6">
-            <div id="vegetable_dropzone" class="vegetable_dropzone dropzone">野菜エリア</div>
-            <div id="fruit-dropzone" class="fruit_dropzone dropzone">フルーツエリア</div>
+        <div class="flex flex-col items-center justify-center gap-4">
+            <div id="vegetable_dropzone" class="vegetable_dropzone dropzone flex justify-center items-center">野菜</div>
+            <h2>野菜と果物に分けてみてね</h2>
+            <div id="fruit-dropzone" class="fruit_dropzone dropzone  flex justify-center items-center">果物</div>
         </div>
     </section>
 

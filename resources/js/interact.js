@@ -10,8 +10,17 @@ function dragMoveListener(event) {
     var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
 
     // 要素の位置を更新
-    target.style.transform = `translate(${x}px, ${y}px)`;
-
+    if(target.id === 'radish') {
+        target.style.transform = `translate(${x}px, ${y}px) rotate(-10deg)`;
+    }else if(target.id === 'strawberry'){
+        target.style.transform = `translate(${x}px, ${y}px) rotate(15deg)`;
+    }else if(target.id === 'onion'){
+        target.style.transform = `translate(${x}px, ${y}px) rotate(45deg)`;
+    }else if(target.id === 'mushroom'){
+        target.style.transform = `translate(${x}px, ${y}px) rotate(-35deg)`;
+    }else if(target.id === 'peach'){
+        target.style.transform = `translate(${x}px, ${y}px) rotate(-15deg)`;
+    }
     // 新しい位置をデータ属性として保存
     target.setAttribute('data-x', x);
     target.setAttribute('data-y', y);
