@@ -126,6 +126,8 @@ function CheckAmount(){
         }
     }
     alert('クリアおめでとう！！！');
-    let container = document.getElementById('container');
-    container.classList.remove("hidden");
+    const VideoContainer = document.getElementById('video_container');
+    VideoContainer.classList.remove("hidden");
+    const MissionContainer = document.getElementById('mission_container');
+    MissionContainer.classList.add("hidden");
 }
