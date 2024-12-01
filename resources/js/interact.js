@@ -128,6 +128,7 @@ function CheckAmount(){
     alert('クリアおめでとう！！！');
     const VideoContainer = document.getElementById('video_container');
     VideoContainer.classList.remove("hidden");
+    VideoContainer.classList.add("flex");
     const MissionContainer = document.getElementById('mission_container');
     MissionContainer.classList.add("hidden");
 }

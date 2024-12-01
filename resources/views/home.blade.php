@@ -25,7 +25,7 @@
     </section>
 
     {{--missionクリア動画ページ--}}
-    <section id="video_container" class="hidden min-h-screen max-h-screen w-full relative">
+    <section id="video_container" class="hidden bg-video flex-col justify-end items-center gap-8 min-h-screen max-h-screen w-full relative">
         <article class="flex flex-col justify-center items-center gap-4">
             <h2 class="text-2xl">大正解</h2>
             <h2 class="text-2xl">おめでとう</h2>
