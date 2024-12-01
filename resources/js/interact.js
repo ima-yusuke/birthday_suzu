@@ -62,8 +62,17 @@ interact('.vegetable_dropzone').dropzone({
 
         // ドロップが成功していない場合は、元の位置に戻す
         if(!event.relatedTarget.classList.contains('success')){
-            event.relatedTarget.style.transform = `translate(0px, 0px)`;
-            event.relatedTarget.setAttribute('data-x', 0);
+            if(event.relatedTarget.id === 'radish') {
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-10deg)`;
+            }else if(event.relatedTarget.id === 'strawberry'){
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(15deg)`;
+            }else if(event.relatedTarget.id === 'onion'){
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(45deg)`;
+            }else if(event.relatedTarget.id === 'mushroom'){
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-35deg)`;
+            }else if(event.relatedTarget.id === 'peach'){
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-15deg)`;
+            }            event.relatedTarget.setAttribute('data-x', 0);
             event.relatedTarget.setAttribute('data-y', 0);
         }
         CheckAmount();
@@ -106,7 +115,17 @@ interact('.fruit_dropzone').dropzone({
 
         // ドロップが成功していない場合は、元の位置に戻す
         if(!event.relatedTarget.classList.contains('success')){
-            event.relatedTarget.style.transform = `translate(0px, 0px)`;
+            if(event.relatedTarget.id === 'radish') {
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-10deg)`;
+            }else if(event.relatedTarget.id === 'strawberry'){
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(15deg)`;
+            }else if(event.relatedTarget.id === 'onion'){
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(45deg)`;
+            }else if(event.relatedTarget.id === 'mushroom'){
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-35deg)`;
+            }else if(event.relatedTarget.id === 'peach'){
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-15deg)`;
+            }
             event.relatedTarget.setAttribute('data-x', 0);
             event.relatedTarget.setAttribute('data-y', 0);
         }
@@ -134,7 +153,6 @@ function CheckAmount(){
             return;
         }
     }
-    alert('クリアおめでとう！！！');
     const VideoContainer = document.getElementById('video_container');
     VideoContainer.classList.remove("hidden");
     VideoContainer.classList.add("flex");
