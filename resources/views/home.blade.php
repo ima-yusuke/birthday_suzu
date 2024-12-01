@@ -27,6 +27,7 @@
 
     {{--missionクリア動画ページ--}}
     <section id="video_container" class="hidden bg-video flex-col justify-end items-center gap-8 min-h-screen max-h-screen w-full relative">
+        <button type="button" id="direct_album_btn" class="fixed top-6 right-6 text-xl">next→</button>
         <article class="flex flex-col justify-center items-center gap-4">
             <h2 class="text-4xl font-bold text-green-500">大正解</h2>
             <h2 class="text-4xl font-bold text-green-500">おめでとう</h2>
@@ -34,6 +35,11 @@
         <video id="video" class="w-full h-full object-cover" autoplay muted loop playsinline>
             <source src="{{ asset('storage/video/video-01.MP4') }}" type="video/mp4">
         </video>
+    </section>
+
+    {{--画像ページ--}}
+    <section id="album_container" class="hidden min-h-screen max-h-screen w-full relative">
+        <img src="{{ asset('storage/img/album-01.JPG') }}" alt="album01" class="object-cover w-full h-full">
     </section>
 
 </x-template>

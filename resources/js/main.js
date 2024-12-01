@@ -1,6 +1,10 @@
 const TopStartContainer = document.getElementById('top_start_container');
 const MissionStartBtn = document.getElementById('mission_start_btn');
 const MissionContainer = document.getElementById('mission_container');
+const DirectAlbumBtn = document.getElementById("direct_album_btn");
+const AlbumContainer = document.getElementById('album_container');
+const VideoContainer = document.getElementById('video_container');
+
 let triangles = document.getElementsByClassName('triangle');
 
 // トップ画面の三角形の色を変更するための非同期関数
@@ -39,3 +43,11 @@ MissionStartBtn.addEventListener('click', () => {
     TopStartContainer.style.display = 'none';
     MissionContainer.classList.remove('hidden');
 });
+
+// nextボタンをクリックしたとき
+DirectAlbumBtn.addEventListener('click', () => {
+    VideoContainer.classList.add('hidden');
+    AlbumContainer.classList.remove('hidden');
+});
+
+
