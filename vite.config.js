@@ -8,7 +8,8 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/css/interact.scss',
                 'resources/js/app.js',
-                'resources/js/interact.js'
+                'resources/js/interact.js',
+                'resources/js/main.js'
             ],
             refresh: true,
         }),
