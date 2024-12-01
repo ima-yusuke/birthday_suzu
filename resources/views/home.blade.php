@@ -30,7 +30,7 @@
             <h2 class="text-2xl">大正解</h2>
             <h2 class="text-2xl">おめでとう</h2>
         </article>
-        <video id="video" class="w-full h-full object-cover" autoplay muted loop>
+        <video id="video" class="w-full h-full object-cover" autoplay muted loop playsinline>
             <source src="{{ asset('storage/video/video-01.MP4') }}" type="video/mp4">
         </video>
     </section>
