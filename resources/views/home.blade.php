@@ -11,10 +11,14 @@
             <p class="text-white text-xl">▼</p>
             <p class="text-xl">▼</p>
         </aside>
-        <img src="{{ asset('storage/img/flower.JPG') }}" alt="pic-02" class="object-cover min-h-screen w-full">
+        <img src="{{ asset('storage/img/flower.JPG') }}" alt="flower" class="object-cover min-h-screen w-full">
     </section>
 
-
+    {{--missionスタートページ--}}
+    <section class="bg-main min-h-screen w-full relative flex flex-col justify-center items-center gap-4">
+        <p class="text-2xl">mission</p>
+        <p class="bg-white py-1 px-6 rounded-full">START</p>
+    </section>
 
     <img src="{{ asset('storage/img/pic-01.png') }}" alt="pic-01" class="vegetable yes-drop drag-drop object-cover w-[30dvw] h-[30dvw]">
     <img src="{{ asset('storage/img/pic-02.png') }}" alt="pic-02" class="fruit yes-drop drag-drop object-cover w-[30dvw] h-[30dvw]">
