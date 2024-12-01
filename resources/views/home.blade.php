@@ -1,9 +1,21 @@
 <x-template title="happy birthday Suzu">
+
+    {{--topページ--}}
     <section class="min-h-screen w-full relative flex justify-center items-center">
-        <div class="min-h-screen w-full bg-gray-400 absolute z-20 opacity-50"></div>
-        <h1 class="text-center text-xl font-bold absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">Happy Birthday SUZU</h1>
-        <img src="{{ asset('storage/img/pic-02.jpeg') }}" alt="pic-02" class="object-cover min-h-screen w-full">
+        <div class="absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <h1 class="text-center text-4xl">Suzuno</h1>
+            <h4 class="text-center">HAPPY BIRTHDAY</h4>
+        </div>
+        <aside class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex flex-col gap-1 items-center">
+            <p class="text-white text-xl">▼</p>
+            <p class="text-white text-xl">▼</p>
+            <p class="text-xl">▼</p>
+        </aside>
+        <img src="{{ asset('storage/img/flower.JPG') }}" alt="pic-02" class="object-cover min-h-screen w-full">
     </section>
+
+
+
     <img src="{{ asset('storage/img/pic-01.png') }}" alt="pic-01" class="vegetable yes-drop drag-drop object-cover w-[30dvw] h-[30dvw]">
     <img src="{{ asset('storage/img/pic-02.png') }}" alt="pic-02" class="fruit yes-drop drag-drop object-cover w-[30dvw] h-[30dvw]">
 
