@@ -31,7 +31,7 @@
             <h2 class="text-2xl">おめでとう</h2>
         </article>
         <video id="video" class="w-full h-full object-cover" autoplay muted loop>
-            <source src="{{ asset('storage/video/video-01.mp4') }}" type="video/mp4">
+            <source src="{{ asset('storage/video/video-01.MP4') }}" type="video/mp4">
         </video>
     </section>
 
