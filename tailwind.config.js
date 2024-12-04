@@ -16,7 +16,8 @@ export default {
             },
             colors: {
                 "main":"rgb(216,214,217)",
-                "video":"rgb(236,239,215)",
+                "video":"rgb(255,244,237)",
+                "video-green":"rgb(3,101,12)",
             }
         },
     },
