@@ -158,4 +158,12 @@ function CheckAmount(){
     VideoContainer.classList.add("flex");
     const MissionContainer = document.getElementById('mission_container');
     MissionContainer.classList.add("hidden");
+
+    setTimeout(() => {
+        VideoContainer.classList.remove("flex");
+        VideoContainer.classList.add("hidden");
+        const AlbumContainer = document.getElementById('album_container');
+        AlbumContainer.classList.remove("hidden");
+    }, 3000);
 }
+

@@ -15,7 +15,7 @@
             <source src="{{ asset('storage/video/video-01.MP4') }}" type="video/mp4">
         </video>
         <h2 class="text-center text-video-green font-bold text-xl pb-10">野菜と果物に分けてみてね</h2>
-        <article class="relative min-h-screen max-h-screen w-full">
+        <article class="relative min-h-s max-h-screen w-full">
             <img src="{{ asset('storage/img/pic-01.png') }}" alt="radish" id="radish" class="vegetable absolute right-[3%] bottom-[2%] yes-drop drag-drop object-cover w-[30dvw] h-[30dvw]">
             <img src="{{ asset('storage/img/pic-02.png') }}" alt="strawberry" id="strawberry" class="fruit absolute left-[5%] top-[5%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
             <img src="{{ asset('storage/img/pic-03.png') }}" alt="onion" id="onion" class="vegetable absolute left-[5%] bottom-[8%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
@@ -31,16 +31,14 @@
     </section>
 
     {{--missionクリア動画ページ--}}
-    <section id="video_container" class="hidden bg-video flex-col justify-end items-center gap-8 min-h-screen max-h-screen w-full relative">
-        <button type="button" id="direct_album_btn" class="fixed top-6 right-6 text-xl">next→</button>
-        <article class="flex flex-col justify-center items-center gap-4">
-            <h2 class="text-4xl font-bold text-green-500">大正解</h2>
-            <h2 class="text-4xl font-bold text-green-500">おめでとう</h2>
+    <section id="video_container" class="hidden bg-video min-h-screen max-h-screen w-full relative">
+        <article class="absolute top-[30%] left-16 transform rotate-[25deg] flex flex-col justify-center items-center gap-4">
+            <h2 class="text-2xl font-bold text-video-green">大正解!!!</h2>
+            <h2 class="text-2xl font-bold text-video-green">おめでとうー!</h2>
         </article>
-        <video id="video" class="w-full h-full object-cover" autoplay muted loop playsinline>
-            <source src="{{ asset('storage/video/video-01.MP4') }}" type="video/mp4">
-        </video>
+        <img src="{{ asset('storage/img/pic-07.png') }}" alt="pic07" class="absolute bottom-0 right-2 object-cover w-full h-full">
     </section>
+
 
     {{--画像ページ--}}
     <section id="album_container" class="hidden min-h-screen max-h-screen w-full relative">
