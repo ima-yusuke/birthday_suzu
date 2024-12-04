@@ -164,6 +164,6 @@ function CheckAmount(){
         VideoContainer.classList.add("hidden");
         const AlbumContainer = document.getElementById('album_container');
         AlbumContainer.classList.remove("hidden");
-    }, 3000);
+    }, 2000);
 }
 

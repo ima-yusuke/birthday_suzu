@@ -44,3 +44,63 @@
 #peach{
     transform: rotate(-15deg);
 }
+.gallery-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeInOut 16s forwards; /* 追加された画像分アニメーション時間を延ばす */
+}
+
+.gallery-image:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.gallery-image:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.gallery-image:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.gallery-image:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.gallery-image:nth-child(5) {
+    animation-delay: 8s;
+}
+
+.gallery-image:nth-child(6) {
+    animation-delay: 10s;
+}
+
+.gallery-image:nth-child(7) {
+    animation-delay: 12s;
+}
+
+.gallery-image:nth-child(8) {
+    animation-delay: 14s; /* 新しい画像の遅延を設定 */
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; /* 最後の画像はそのまま表示 */
+    }
+}

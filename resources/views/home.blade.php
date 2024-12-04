@@ -42,7 +42,15 @@
 
     {{--画像ページ--}}
     <section id="album_container" class="hidden min-h-screen max-h-screen w-full relative">
-        <img src="{{ asset('storage/img/album-01.JPG') }}" alt="album01" class="object-cover w-full h-full">
+        <img src="{{ asset('storage/img/album-01.JPG') }}" alt="album01" class="object-cover w-full h-full gallery-image">
+        <img src="{{ asset('storage/img/album-02.JPG') }}" alt="album02" class="object-cover w-full h-full gallery-image">
+        <img src="{{ asset('storage/img/album-03.JPG') }}" alt="album03" class="object-cover w-full h-full gallery-image">
+        <img src="{{ asset('storage/img/album-04.JPG') }}" alt="album04" class="object-cover w-full h-full gallery-image">
+        <img src="{{ asset('storage/img/album-05.JPG') }}" alt="album05" class="object-cover w-full h-full gallery-image">
+        <img src="{{ asset('storage/img/album-06.JPG') }}" alt="album06" class="object-cover w-full h-full gallery-image">
+        <img src="{{ asset('storage/img/album-07.JPG') }}" alt="album07" class="object-cover w-full h-full gallery-image">
+        <img src="{{ asset('storage/img/album-08.JPG') }}" alt="album08" class="object-cover w-full h-full gallery-image">
+
     </section>
 
 </x-template>
