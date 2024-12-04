@@ -8,5 +8,4 @@
         <p class="triangle text-white text-xl">▼</p>
         <p class="triangle text-white text-xl">▼</p>
     </aside>
-    <img src="{{ asset('storage/img/flower.JPG') }}" alt="flower" class="object-cover min-h-screen w-full">
 </section>
