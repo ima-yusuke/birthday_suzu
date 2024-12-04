@@ -1,7 +1,7 @@
 <x-template title="happy birthday Suzu">
 
     {{--最初のページ--}}
-    <section id="top_start_container" class="relative bg-cover bg-center" style="background-image: url('{{ asset('storage/img/flower.JPG') }}');">
+    <section id="top_start_container" class="relative bg-cover bg-center bg-fixed" style="background-image: url('{{ asset('storage/img/flower.JPG') }}');">
         {{--topページ--}}
         <x-top-page></x-top-page>
 

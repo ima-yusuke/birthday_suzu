@@ -1,5 +1,19 @@
-#top_start_container{
-    background-attachment: fixed;
+#top_start_container {
+    position: relative;
+    overflow: hidden; /* 必要に応じて親要素のオーバーフローを設定 */
+}
+
+#top_start_container::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* 背景を他のコンテンツの背面に表示 */
+    width: 100%;
+    height: 100vh; /* 画面の高さに合わせる */
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .dropzone {
     background-color: #b8b6b6;
