@@ -1,7 +1,22 @@
 <x-template title="happy birthday Suzu">
-
+    <style>
+        #top_start_container::before {
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('{{ asset('storage/img/flower.JPG') }}');
+            background-size: cover;
+        }
+    </style>
     {{--最初のページ--}}
-    <section id="top_start_container" class="relative bg-cover bg-center bg-fixed" style="background-image: url('{{ asset('storage/img/flower.JPG') }}');">
+    <section id="top_start_container" class="relative bg-cover bg-center bg-fixed">
         {{--topページ--}}
         <x-top-page></x-top-page>
 
