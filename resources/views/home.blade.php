@@ -46,13 +46,10 @@
     </section>
 
     {{--missionクリア動画ページ--}}
-    <section id="video_container" class="hidden bg-video min-h-screen max-h-screen w-full relative">
-        <article class="absolute top-[30%] left-16 transform rotate-[25deg] flex flex-col justify-center items-center gap-4">
-            <h2 class="text-2xl font-bold text-video-green">大正解!!!</h2>
-            <h2 class="text-2xl font-bold text-video-green">おめでとうー!</h2>
-        </article>
-        <img src="{{ asset('storage/img/pic-07.png') }}" alt="pic07" class="absolute bottom-0 right-2 object-cover w-full h-full">
+    <section id="video_container" class="hidden min-h-screen max-h-screen w-full bg-cover bg-center"
+             style="background-image: url('{{ asset('storage/img/pic-07.JPG') }}');">
     </section>
+
 
 
     {{--画像ページ--}}
