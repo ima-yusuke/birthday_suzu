@@ -50,8 +50,6 @@
              style="background-image: url('{{ asset('storage/img/pic-07.JPG') }}');">
     </section>
 
-
-
     {{--画像ページ--}}
     <section id="album_container" class="hidden min-h-screen max-h-screen w-full relative bg-black flex-col justify-center items-center">
         <img src="{{ asset('storage/img/album-00.JPG') }}" alt="album01" class="object-contain w-full h-full gallery-image">
@@ -63,6 +61,4 @@
         <img src="{{ asset('storage/img/album-07.JPG') }}" alt="album07" class="object-contain w-full h-full gallery-image">
         <img src="{{ asset('storage/img/album-08.JPG') }}" alt="album08" class="object-contain w-full h-full gallery-image">
     </section>
-
-
 </x-template>

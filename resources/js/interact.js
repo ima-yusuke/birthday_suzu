@@ -165,6 +165,32 @@ function CheckAmount(){
         const AlbumContainer = document.getElementById('album_container');
         AlbumContainer.classList.remove("hidden");
         AlbumContainer.classList.add("flex");
+
+
+        const images = document.querySelectorAll(".gallery-image");
+        let currentIndex = 0;
+        const showImage = (index) => {
+            images.forEach((img, i) => {
+                if (i === index) {
+                    img.style.animationDelay = "0s"; // アニメーション開始を即時
+                    img.classList.add("active");
+                } else {
+                    img.classList.remove("active");
+                }
+            });
+        };
+
+        const interval = setInterval(() => {
+            showImage(currentIndex);
+            currentIndex++;
+
+            // 最後の画像で停止
+            if (currentIndex >= images.length) {
+                clearInterval(interval);
+                // 最後の画像を保持
+                images[currentIndex - 1].classList.add("active");
+            }
+        }, 2000); // 各画像を2秒ごとに表示
     }, 3000);
 }
 

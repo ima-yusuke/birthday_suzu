@@ -109,6 +109,10 @@
         opacity: 0;
     }
     100% {
-        opacity: 1; /* 最後の画像はそのまま表示 */
+        opacity: 0; /* 最後の画像はそのまま表示 */
     }
+}
+.gallery-image.active {
+    animation: none; /* JavaScriptで最後の画像を固定 */
+    opacity: 1; /* 最後の画像を表示したままにする */
 }
