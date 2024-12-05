@@ -49,16 +49,18 @@
 #peach{
     transform: rotate(-15deg);
 }
+#album_container {
+    height: 100vh; /* 画面全体の高さを固定 */
+    overflow: hidden; /* スクロールを防ぐ */
+}
+
 .gallery-image {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0%, -50%); /* 中央揃えに補正 */
+    position: absolute; /* absoluteではなくrelativeで親要素内で中央揃え */
     width: 100%;
-    max-height: calc(100% - 20vh);
+    max-height: calc(100% - 20vh); /* 上下20vh分の余白を確保 */
     object-fit: cover;
     opacity: 0;
-    animation: fadeInOut 16s forwards; /* 追加された画像分アニメーション時間を延ばす */
+    animation: fadeInOut 16s forwards; /* アニメーション */
 }
 
 .gallery-image:nth-child(1) {
