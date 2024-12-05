@@ -1,4 +1,5 @@
 import interact from 'interactjs';
+import confetti from 'canvas-confetti';
 
 let dragElements = document.querySelectorAll('.yes-drop');
 
@@ -146,6 +147,25 @@ interact('.drag-drop').draggable({
     listeners: { move: dragMoveListener }
 });
 
+function fireWork() {
+
+        // ランダムな位置を生成
+        const randomX = Math.random(); // 0 から 1 のランダム値
+        const randomY = Math.random(); // 0 から 1 のランダム値
+
+        confetti({
+            particleCount: 100,
+            angle: 90,
+            spread: 45,
+            origin: {x: randomX, y: randomY}, // ランダムな位置を指定
+            colors: ['#ff0000', '#00ff00', '#0000ff'], // 使用する色
+            gravity: 0.3, // 重力
+            drift: 0, // 左右の揺れ
+            scalar: 1, // 粒子のサイズ
+        });
+
+}
+
 // 全ての要素がドロップゾーンにドロップされたかどうかを確認する関数
 function CheckAmount(){
     for (let i = 0; i < dragElements.length; i++) {
@@ -158,7 +178,11 @@ function CheckAmount(){
     VideoContainer.classList.add("flex");
     const MissionContainer = document.getElementById('mission_container');
     MissionContainer.classList.add("hidden");
-
+    for (let i = 0; i < 3; i++) {
+        setTimeout(() => {
+            fireWork();
+        }, i * 1000); // 各花火を 1 秒の間隔で順次発生させる
+    }
     setTimeout(() => {
         VideoContainer.classList.remove("flex");
         VideoContainer.classList.add("hidden");
@@ -191,6 +215,6 @@ function CheckAmount(){
                 images[currentIndex - 1].classList.add("active");
             }
         }, 2000); // 各画像を2秒ごとに表示
-    }, 3000);
+    }, 4000);
 }
 

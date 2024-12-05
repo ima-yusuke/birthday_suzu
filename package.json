@@ -17,6 +17,7 @@
         "vite": "^5.0"
     },
     "dependencies": {
+        "canvas-confetti": "^1.9.3",
         "interactjs": "^1.10.27",
         "sass": "^1.81.0"
     }
