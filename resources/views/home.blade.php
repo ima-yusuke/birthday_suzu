@@ -26,7 +26,7 @@
 
     {{--missionページ--}}
     <section id="mission_container" class="hidden bg-video">
-        <video id="video" class="w-full object-cover" autoplay muted loop playsinline>
+        <video id="video" class="w-full object-cover pt-32" autoplay muted loop playsinline>
             <source src="{{ asset('storage/video/video-01.MP4') }}" type="video/mp4">
         </video>
         <h2 class="text-center text-video-green font-bold text-xl pb-10">野菜と果物に分けてみてね</h2>
@@ -53,7 +53,7 @@
 
 
     {{--画像ページ--}}
-    <section id="album_container" class="hidden min-h-screen max-h-screen w-full relative bg-black">
+    <section id="album_container" class="hidden min-h-screen max-h-screen w-full relative bg-black flex-col justify-center items-center">
         <img src="{{ asset('storage/img/album-00.JPG') }}" alt="album01" class="object-contain w-full h-full gallery-image">
         <img src="{{ asset('storage/img/album-02.JPG') }}" alt="album02" class="object-contain w-full h-full gallery-image">
         <img src="{{ asset('storage/img/album-03.JPG') }}" alt="album03" class="object-contain w-full h-full gallery-image">

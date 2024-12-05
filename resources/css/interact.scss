@@ -51,10 +51,11 @@
 }
 .gallery-image {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
+    transform: translate(0%, -50%); /* 中央揃えに補正 */
     width: 100%;
-    height: 100%;
+    max-height: calc(100% - 20vh);
     object-fit: cover;
     opacity: 0;
     animation: fadeInOut 16s forwards; /* 追加された画像分アニメーション時間を延ばす */
