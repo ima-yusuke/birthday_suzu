@@ -34,20 +34,20 @@ interact('.vegetable_dropzone').dropzone({
     // ドラッグが開始されたとき
     // ドロップゾーンがアクティブであることを視覚的にユーザーに示す
     ondropactivate: function (event) {
-        event.target.classList.add('drop-active');
+        // event.target.classList.add('drop-active');
         event.relatedTarget.classList.remove('success');
 
     },
     // ドラッグ中の要素がドロップゾーンに入ったとき
     // ドラッグ可能な要素がドロップゾーンに到達したことを視覚的に示す
     ondragenter: function (event) {
-        var dropzoneElement = event.target;
-        dropzoneElement.classList.add('drop-target');
+        // var dropzoneElement = event.target;
+        // dropzoneElement.classList.add('drop-target');
     },
     // ドラッグ中の要素がドロップゾーンから離れたとき
     // ドロップゾーンを離れたことを視覚的に示す
     ondragleave: function (event) {
-        event.target.classList.remove('drop-target');
+        // event.target.classList.remove('drop-target');
     },
     // ドラッグ中の要素がドロップゾーンにドロップされたとき
     // ドロップが成功したことを示す
@@ -57,8 +57,8 @@ interact('.vegetable_dropzone').dropzone({
     // ドロップ操作が完了したとき
     // ドロップゾーンのアクティブ状態を解除する
     ondropdeactivate: function (event) {
-        event.target.classList.remove('drop-active');
-        event.target.classList.remove('drop-target');
+        // event.target.classList.remove('drop-active');
+        // event.target.classList.remove('drop-target');
 
         // ドロップが成功していない場合は、元の位置に戻す
         if(!event.relatedTarget.classList.contains('success')){
@@ -87,20 +87,20 @@ interact('.fruit_dropzone').dropzone({
     // ドラッグが開始されたとき
     // ドロップゾーンがアクティブであることを視覚的にユーザーに示す
     ondropactivate: function (event) {
-        event.target.classList.add('drop-active');
+        // event.target.classList.add('drop-active');
         event.relatedTarget.classList.remove('success');
 
     },
     // ドラッグ中の要素がドロップゾーンに入ったとき
     // ドラッグ可能な要素がドロップゾーンに到達したことを視覚的に示す
     ondragenter: function (event) {
-        var dropzoneElement = event.target;
-        dropzoneElement.classList.add('drop-target');
+        // var dropzoneElement = event.target;
+        // dropzoneElement.classList.add('drop-target');
     },
     // ドラッグ中の要素がドロップゾーンから離れたとき
     // ドロップゾーンを離れたことを視覚的に示す
     ondragleave: function (event) {
-        event.target.classList.remove('drop-target');
+        // event.target.classList.remove('drop-target');
     },
     // ドラッグ中の要素がドロップゾーンにドロップされたとき
     // ドロップが成功したことを示す
@@ -110,8 +110,8 @@ interact('.fruit_dropzone').dropzone({
     // ドロップ操作が完了したとき
     // ドロップゾーンのアクティブ状態を解除する
     ondropdeactivate: function (event) {
-        event.target.classList.remove('drop-active');
-        event.target.classList.remove('drop-target');
+        // event.target.classList.remove('drop-active');
+        // event.target.classList.remove('drop-target');
 
         // ドロップが成功していない場合は、元の位置に戻す
         if(!event.relatedTarget.classList.contains('success')){
