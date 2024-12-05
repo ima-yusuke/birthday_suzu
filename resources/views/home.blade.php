@@ -53,7 +53,7 @@
 
 
     {{--画像ページ--}}
-    <section id="album_container" class="hidden overflow-hidden min-h-screen max-h-screen w-full relative bg-black flex-col justify-center items-center">
+    <section id="album_container" class="hidden min-h-screen max-h-screen w-full relative bg-black flex-col justify-center items-center">
         <img src="{{ asset('storage/img/album-00.JPG') }}" alt="album01" class="object-contain w-full h-full gallery-image">
         <img src="{{ asset('storage/img/album-02.JPG') }}" alt="album02" class="object-contain w-full h-full gallery-image">
         <img src="{{ asset('storage/img/album-03.JPG') }}" alt="album03" class="object-contain w-full h-full gallery-image">

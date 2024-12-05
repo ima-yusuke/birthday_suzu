@@ -165,6 +165,7 @@ function CheckAmount(){
         const AlbumContainer = document.getElementById('album_container');
         AlbumContainer.classList.remove("hidden");
         AlbumContainer.classList.add("flex");
+        document.body.style.overflow = 'hidden';
     }, 3000);
 }
 
