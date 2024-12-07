@@ -36,7 +36,12 @@
             <img src="{{ asset('storage/img/pic-03.png') }}" alt="onion" id="onion" class="vegetable absolute left-[5%] bottom-[8%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
             <img src="{{ asset('storage/img/pic-04.png') }}" alt="mushroom" id="mushroom" class="vegetable absolute right-[2%] top-[3%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
             <img src="{{ asset('storage/img/pic-05.png') }}" alt="peach" id="peach" class="fruit absolute left-[5%] top-[30%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
-            <div class="flex flex-col items-center justify-center gap-4">
+            <img src="{{ asset('storage/img/pic-06.png') }}" alt="melon" id="melon" class="fruit absolute left-[3%] top-[20%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
+            <img src="{{ asset('storage/img/pic-07.png') }}" alt="lettuce" id="lettuce" class="vegetable absolute right-[8%] top-[50%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
+            <img src="{{ asset('storage/img/pic-08.png') }}" alt="asparagus" id="asparagus" class="vegetable absolute right-[5%] top-[25%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
+            <img src="{{ asset('storage/img/pic-09.png') }}" alt="eggplant" id="eggplant" class="vegetable absolute left-[50%] top-[42%] -translate-x-1/2 -translate-y-1/2 yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
+            <img src="{{ asset('storage/img/pic-10.png') }}" alt="lemon" id="lemon" class="fruit absolute left-[10%] bottom-[40%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
+            <div class="flex flex-col items-center justify-center gap-10">
                 <div id="vegetable_dropzone" class="vegetable_dropzone dropzone flex justify-center items-center text-white font-bold">野菜</div>
                 <div id="fruit-dropzone" class="fruit_dropzone dropzone  flex justify-center items-center text-white font-bold">果物</div>
             </div>

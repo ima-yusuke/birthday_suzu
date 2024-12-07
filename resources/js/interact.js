@@ -21,6 +21,16 @@ function dragMoveListener(event) {
         target.style.transform = `translate(${x}px, ${y}px) rotate(-35deg)`;
     }else if(target.id === 'peach'){
         target.style.transform = `translate(${x}px, ${y}px) rotate(-15deg)`;
+    }else if(target.id === 'melon') {
+        target.style.transform = `translate(${x}px, ${y}px) rotate(-45deg)`;
+    }else if(target.id === 'lettuce') {
+        target.style.transform = `translate(${x}px, ${y}px) rotate(35deg)`;
+    }else if(target.id === 'lemon') {
+        target.style.transform = `translate(${x}px, ${y}px) rotate(0deg)`;
+    }else if(target.id === 'asparagus') {
+        target.style.transform = `translate(${x}px, ${y}px) rotate(15deg)`;
+    }else if (target.id === 'eggplant') {
+        target.style.transform = `translate(${x}px, ${y}px) rotate(-30deg)`;
     }
     // 新しい位置をデータ属性として保存
     target.setAttribute('data-x', x);
@@ -73,7 +83,18 @@ interact('.vegetable_dropzone').dropzone({
                 event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-35deg)`;
             }else if(event.relatedTarget.id === 'peach'){
                 event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-15deg)`;
-            }            event.relatedTarget.setAttribute('data-x', 0);
+            }else if(event.relatedTarget.id === 'melon') {
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-45deg)`;
+            }else if(event.relatedTarget.id === 'lettuce') {
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(35deg)`;
+            }else if(event.relatedTarget.id === 'lemon') {
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(0deg)`;
+            }else if(event.relatedTarget.id === 'asparagus') {
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(15deg)`;
+            }else if (event.relatedTarget.id === 'eggplant') {
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-30deg)`;
+            }
+            event.relatedTarget.setAttribute('data-x', 0);
             event.relatedTarget.setAttribute('data-y', 0);
         }
         CheckAmount();
@@ -126,6 +147,16 @@ interact('.fruit_dropzone').dropzone({
                 event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-35deg)`;
             }else if(event.relatedTarget.id === 'peach'){
                 event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-15deg)`;
+            }else if(event.relatedTarget.id === 'melon') {
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-45deg)`;
+            }else if(event.relatedTarget.id === 'lettuce') {
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(35deg)`;
+            }else if(event.relatedTarget.id === 'lemon') {
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(0deg)`;
+            }else if(event.relatedTarget.id === 'asparagus') {
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(15deg)`;
+            }else if (event.relatedTarget.id === 'eggplant') {
+                event.relatedTarget.style.transform = `translate(0px, 0px) rotate(-30deg)`;
             }
             event.relatedTarget.setAttribute('data-x', 0);
             event.relatedTarget.setAttribute('data-y', 0);
