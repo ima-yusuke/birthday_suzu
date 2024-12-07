@@ -178,18 +178,18 @@ function CheckAmount(){
     VideoContainer.classList.add("flex");
     const MissionContainer = document.getElementById('mission_container');
     MissionContainer.classList.add("hidden");
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
         setTimeout(() => {
             fireWork();
         }, i * 1000); // 各花火を 1 秒の間隔で順次発生させる
     }
     setTimeout(() => {
         VideoContainer.classList.remove("flex");
+        VideoContainer.classList.add('fade-out');
         VideoContainer.classList.add("hidden");
         const AlbumContainer = document.getElementById('album_container');
         AlbumContainer.classList.remove("hidden");
         AlbumContainer.classList.add("flex");
-
 
         const images = document.querySelectorAll(".gallery-image");
         let currentIndex = 0;
@@ -214,7 +214,7 @@ function CheckAmount(){
                 // 最後の画像を保持
                 images[currentIndex - 1].classList.add("active");
             }
-        }, 2000); // 各画像を2秒ごとに表示
-    }, 4000);
+        }, 4000); // 各画像を2秒ごとに表示
+    }, 5000);
 }
 

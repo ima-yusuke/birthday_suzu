@@ -60,7 +60,7 @@
     max-height: calc(100% - 20vh); /* 上下20vh分の余白を確保 */
     object-fit: cover;
     opacity: 0;
-    animation: fadeInOut 16s forwards; /* アニメーション */
+    animation: fadeInOut 32s forwards; /* アニメーション全体の時間を変更 */
 }
 
 .gallery-image:nth-child(1) {
@@ -68,31 +68,31 @@
 }
 
 .gallery-image:nth-child(2) {
-    animation-delay: 2s;
-}
-
-.gallery-image:nth-child(3) {
     animation-delay: 4s;
 }
 
-.gallery-image:nth-child(4) {
-    animation-delay: 6s;
-}
-
-.gallery-image:nth-child(5) {
+.gallery-image:nth-child(3) {
     animation-delay: 8s;
 }
 
-.gallery-image:nth-child(6) {
-    animation-delay: 10s;
-}
-
-.gallery-image:nth-child(7) {
+.gallery-image:nth-child(4) {
     animation-delay: 12s;
 }
 
+.gallery-image:nth-child(5) {
+    animation-delay: 16s;
+}
+
+.gallery-image:nth-child(6) {
+    animation-delay: 20s;
+}
+
+.gallery-image:nth-child(7) {
+    animation-delay: 24s;
+}
+
 .gallery-image:nth-child(8) {
-    animation-delay: 14s; /* 新しい画像の遅延を設定 */
+    animation-delay: 28s; /* 新しい画像の遅延を設定 */
 }
 
 @keyframes fadeInOut {
@@ -102,17 +102,31 @@
     10% {
         opacity: 1;
     }
-    40% {
-        opacity: 1;
+    60% {
+        opacity: 1; /* 表示時間を延長 */
     }
-    50% {
+    70% {
         opacity: 0;
     }
     100% {
         opacity: 0; /* 最後の画像はそのまま表示 */
     }
 }
+
 .gallery-image.active {
     animation: none; /* JavaScriptで最後の画像を固定 */
     opacity: 1; /* 最後の画像を表示したままにする */
 }
+
+
+//ミッションクリアからアルバムへの切替
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
