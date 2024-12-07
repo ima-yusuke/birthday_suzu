@@ -143,3 +143,8 @@
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+.no-spacing {
+    margin: 0; /* 上下の余白を削除 */
+    line-height: 1; /* 行の高さをテキストと同じにする */
+}
+
