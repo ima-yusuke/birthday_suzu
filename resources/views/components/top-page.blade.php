@@ -3,7 +3,7 @@
         <h1 style="font-family: 'Great Vibes', cursive;" class="text-center text-5xl">Suzuno</h1>
         <h6 style="font-family: 'Roboto', sans-serif;" class="text-center text-xs pt-2">HAPPY BIRTHDAY</h6>
     </div>
-    <aside class="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+    <aside class="absolute bottom-28 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
         <p class="triangle text-white text-xl no-spacing">▼</p>
         <p class="triangle text-white text-xl no-spacing">▼</p>
         <p class="triangle text-white text-xl no-spacing">▼</p>
