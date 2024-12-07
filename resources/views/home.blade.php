@@ -35,7 +35,7 @@
             <img src="{{ asset('storage/img/pic-02.png') }}" alt="strawberry" id="strawberry" class="fruit absolute left-[5%] top-[5%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
             <img src="{{ asset('storage/img/pic-03.png') }}" alt="onion" id="onion" class="vegetable absolute left-[5%] bottom-[8%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
             <img src="{{ asset('storage/img/pic-04.png') }}" alt="mushroom" id="mushroom" class="vegetable absolute right-[2%] top-[3%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
-            <img src="{{ asset('storage/img/pic-05.png') }}" alt="peach" id="peach" class="fruit absolute left-[5%] top-[30%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
+            <img src="{{ asset('storage/img/pic-05.png') }}" alt="peach" id="peach" class="fruit absolute left-[2%] bottom-[23%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
             <img src="{{ asset('storage/img/pic-06.png') }}" alt="melon" id="melon" class="fruit absolute left-[3%] top-[20%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
             <img src="{{ asset('storage/img/pic-07.png') }}" alt="lettuce" id="lettuce" class="vegetable absolute right-[8%] top-[50%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
             <img src="{{ asset('storage/img/pic-08.png') }}" alt="asparagus" id="asparagus" class="vegetable absolute right-[5%] top-[25%] yes-drop drag-drop object-cover w-[20dvw] h-[20dvw]">
